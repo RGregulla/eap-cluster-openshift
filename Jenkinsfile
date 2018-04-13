@@ -41,11 +41,11 @@ try {
             //    }
             //}
 
-            stage('Integration Test - deploy components') {
-                dir('scm') {
-                    sh("oc process -f src/main/openshift/minio-deployment-template.yaml | oc apply -f -")
-                }
-            }
+            //stage('Integration Test - deploy components') {
+            //    dir('scm') {
+            //        sh("oc process -f src/main/openshift/minio-deployment-template.yaml | oc apply -f -")
+            //    }
+            //}
 
             stage('Integration Test - deploy application') {
                 dir('scm') {
