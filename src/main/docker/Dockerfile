@@ -1,4 +1,4 @@
-FROM docker-registry.default.svc:5000/openshift/wildfly
+FROM openshift/wildfly-81-centos7
 #FROM registry.access.redhat.com/jboss-eap-7/eap71-openshift
 
 USER root:root
